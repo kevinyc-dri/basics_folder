@@ -3,11 +3,6 @@ function returnTopBooks(books) {
 }
 
 // Write a function that takes an array of objects, books, and returns a new array of topBooks where books.rating >= 4.25
-
-function returnTopBooks(books) {
-  return topBooks = books.forEach((book) => book.rating >= 4.25)
-}
-
 function returnTopBooks(books) {
   let topBooks = []
   for (let i = 0; i < books.length; i ++) {
