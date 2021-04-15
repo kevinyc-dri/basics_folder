@@ -53,34 +53,20 @@ if num is divisible by both 3 and 5 print fizzbuzz
 
 // fizzBuzzDrinkingGame()
 
-for (let i = 0; i <= 100; i++) {
-  // print each number
-  // if number is divisible by 3, print FIZZ
-  // if number is divisible by 5, print BUZZ
-  // if number is divisible by 15, print FIZZBUZZ
-  if (i % 3 && i % 5 === 0) {
-    console.log('FIZZ BUZZ')
-  } else if (i % 3 === 0) {
-    console.log('FIZZ')
-  } else if (i % 5 === 0) {
-    console.log('BUZZ')
-  } else 
-    console.log(i)
-}
-
-for (let i = 0; i <= 100; i++) {
-  if (i % 3 === 0) {
-    console.log('FIZZ')
-
-  } else if (i % 5 === 0) {
-    console.log('BUZZ') 
-
-  } else if (i % 3 && i % 5 === 0) {
-    console.log('FIZZ BUZZ')
-
-  } else
-    console.log(i)
-}
+// for (let i = 0; i <= 100; i++) {
+//   // print each number
+//   // if number is divisible by 3, print FIZZ
+//   // if number is divisible by 5, print BUZZ
+//   // if number is divisible by 15, print FIZZBUZZ
+//   if (i % 3 && i % 5 === 0) {
+//     console.log('FIZZ BUZZ')
+//   } else if (i % 3 === 0) {
+//     console.log('FIZZ')
+//   } else if (i % 5 === 0) {
+//     console.log('BUZZ')
+//   } else 
+//     console.log(i)
+// }
 
 // for (let i = 1; i <= 100; i++) {
 //   console.log((i % 3 === 0 && i % 5 === 0)
@@ -104,7 +90,28 @@ for (let i = 0; i <= 100; i++) {
 // }
 
 
+// for (let i = 0; i <= 100; i++) {
+//   if (i % 15 === 0) {
+//     console.log('Fizz Buzz')
+//   } else if (i % 3 === 0) {
+//     console.log('Fizz') 
+//   } else if (i % 5 === 0) {
+//     console.log('Buzz')
+//   }
+// }
 
+// for (let i = 0; i <= 100; i++) {
+//   let msg = ''
+//   console.log(i % 3 === 0 ? 'Fizz' : msg)
+//   console.log(i % 5 === 0 ? 'Buzz' : msg)
+// }
+
+
+for (let i = 0; i <= 100; i++) {
+  console.log((i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i)
+}
+// both Zero and ' ' empty string is falsy so it picks the right side
+// 0, empty strings, 0n, 0x0, false, null, undefined ALL FALSY!!!
 
 
 
