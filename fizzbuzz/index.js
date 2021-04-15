@@ -107,14 +107,13 @@ if num is divisible by both 3 and 5 print fizzbuzz
 // }
 
 
-for (let i = 0; i <= 100; i++) {
-  console.log((i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i)
-}
+// for (let i = 0; i <= 100; i++) {
+//   console.log((i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i)
+// }
+// between a || if there is no truthy it'll pick the right side
 // both Zero and ' ' empty string is falsy so it picks the right side
 // 0, empty strings, 0n, 0x0, false, null, undefined ALL FALSY!!!
 
-
-
-
-
-
+for (let i = 1; i <= 60; i++) {
+  console.log((i % 3 ? '' : 'Fizz') + (i % 5 ? '' : 'Buzz') || i)
+}
